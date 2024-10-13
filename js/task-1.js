@@ -8,12 +8,12 @@ function isEnoughCapacity(products, containerSize) {
       // console.log(totalSum);
     }
   }
-
-  if (totalSum <= containerSize) {
-    return true;
-  } else {
-    return false;
-  }
+  return totalSum <= containerSize;
+  // if (totalSum <= containerSize) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
 }
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
 
